@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "header header"
+            "nav nav"
+            "sidebar main"
+            "footer footer"
+            ;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #ba4444;
+            padding: 10px;
+            margin-bottom: 2em;
+        }
+        nav ul{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            list-style-type: none;
+            gap: 10px;
+            
+        }
+        @font-face {
+        font-family: 'Fighting Spirit';
+        src: url('Fighting Spirit 2 ital.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            border:solid 0.5em black;
+            background-color: black;
+            border-radius: 1em;
+            padding: 0.5em;
+            font-size: larger;
+        }
+        header{
+            grid-area: header;
+            text-align: center;
+            font-size: 3em;
+            color: #ffffff;
+            padding : 0.5em;
+            background: linear-gradient(to right, black,red,white);
+            font-family: 'Fighting Spirit' ;
+        }
+        aside{
+            grid-area: sidebar;
+            padding-right: 10px;
+            
+        }
+        
+        img{
+            max-width: 60%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        K S I
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mr Beast</a></li>
+            <li><a href="#">Logan Paul</a></li>
+            <li><a href="#">KSI</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <div>
+            <img src="ksi.avif" alt="ksi">
+            <p>DanTDM suckssss <br>Lunchly Forever
+            </p>
+            
+        </div>
+    </aside>
 </body>
 </html>
