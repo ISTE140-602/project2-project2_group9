@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KSI</title>
     <style>
         body {
             display: grid;
             background-color: #000000;
             font-family: Arial, sans-serif;
             color: #ffffff;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0fr 1fr 0fr;
             grid-template-areas: 
-            "header header"
-            "nav nav"
-            "sidebar main"
-            "footer footer"
-            ;
+            "header header header"
+            "nav nav nav"
+            "sidebar main video"
+            "footer footer footer";
         }
-        nav {
+        .nav {
             grid-area: nav;
             background-color: #ba4444;
             padding: 10px;
             margin-bottom: 2em;
         }
-        nav ul{
+        .nav ul{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(5,1fr);
             list-style-type: none;
             gap: 10px;
-            
         }
         @font-face {
         font-family: 'Fighting Spirit';
@@ -37,7 +35,7 @@
         font-weight: normal;
         font-style: normal;
         }
-        nav ul li a {
+        .nav ul li a {
             color: #ffffff;
             text-decoration: none;
             border:solid 0.5em black;
@@ -55,18 +53,55 @@
             background: linear-gradient(to right, black,red,white);
             font-family: 'Fighting Spirit' ;
         }
-        aside{
+        .aside{
             grid-area: sidebar;
             padding-right: 10px;
-            
+            display: block;
+            background-color: #ba4444;
+            border: solid 0.7em white;
+            border-radius: 1em;
+
         }
-        nav ul li a:hover {
-    background-color: #ff0000; 
-}
-        
-        img{
-            max-width: 60%;
-            height: auto;
+        .aside p{
+            margin-left: 3em;
+            font-size: 30px;
+        }
+        .nav ul li a:hover {
+        background-color: #ff4848; 
+        }
+        .aside>img{
+            width: 500px;
+            border-radius: 1em;
+            margin-top: 1em;
+            margin-left: 0.5em;
+        }
+        video{
+            grid-area: video;
+            border: solid 0.7em white;
+            border-radius: 1em;
+
+        }
+        .main{
+            grid-area: main;
+            display: block;
+            border: solid 0.7em white;
+            border-radius: 1em;
+            margin-left: 1em;
+            background-color: #ba4444;
+            margin-right: 1em;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+            font-size: 1em;
+            color: #ffffff;
+            padding: 1em;
+            background-color: #ba4444;
+            border-radius: 1em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border: solid 0.7em white;
+            border-radius: 1em;
         }
     </style>
 </head>
@@ -74,21 +109,27 @@
     <header>
         K S I
     </header>
-    <nav>
+    <div class="nav">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Mr Beast</a></li>
             <li><a href="#">Logan Paul</a></li>
             <li><a href="#">KSI</a></li>
+            <li><a href="">Refrences</a></li>
         </ul>
-    </nav>
-    <aside>
-        <div>
-            <img src="ksi.avif" alt="ksi">
-            <p>DanTDM suckssss <br>Lunchly Forever
-            </p>
-            
-        </div>
-    </aside>
+    </div>
+    <div class="aside">
+        <img src="ksi.avif" alt="ksi">
+        <p><strong>"DanTDM suckssss"</strong> <br>Lunchly Forever!!!!!!</p>
+           
+    </div>
+    <video src="ksi.mp4" autoplay muted loop></video>
+
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis aut pariatur eaque nihil laudantium nemo iusto vel autem fuga reiciendis expedita, provident quod dolore ipsa libero adipisci temporibus nesciunt!</p>
+    </div>
+    <footer>
+        &copy; Akshaj, Ashton, Kelvin. All rights reserved.
+    </footer>
 </body>
 </html>
