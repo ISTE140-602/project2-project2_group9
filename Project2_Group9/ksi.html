@@ -103,6 +103,61 @@
             border: solid 0.7em white;
             border-radius: 1em;
         }
+
+        .hamburger {
+            display: none; 
+            cursor: pointer;
+            font-size: 2em;
+            color: white;
+            border-radius: 1em;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                display: none; 
+            }
+
+            .hamburger {
+                display: block; 
+            }
+
+            body {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "sidebar"
+                    "main"
+                    "video"
+                    "footer";
+            }
+
+            .aside img {
+                width: 100%; 
+                margin: 0 auto;
+            }
+
+            .aside p {
+                margin-left: 1em;
+                font-size: 1.5em;
+            }
+
+            video {
+                width: 100%; 
+                height: auto;
+            }
+
+            .main {
+                margin: 1em;
+                padding: 1em;
+            }
+
+            footer {
+                margin: 1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -110,12 +165,13 @@
         K S I
     </header>
     <div class="nav">
+        <div class="hamburger">&#9776;</div> 
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Mr Beast</a></li>
             <li><a href="#">Logan Paul</a></li>
             <li><a href="#">KSI</a></li>
-            <li><a href="">Refrences</a></li>
+            <li><a href="#">References</a></li>
         </ul>
     </div>
     <div class="aside">
