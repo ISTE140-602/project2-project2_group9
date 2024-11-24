@@ -118,4 +118,61 @@ body {
     border-top: 2px solid #fff;
 }
 
+        @media (max-width: 768px) { 
+            .hamburger {
+                display: flex;
+            }
+            .content {
+                flex-direction: column;
+                gap: 10px;
+            }
 
+            .sidebar {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .main-content {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 10px;
+                font-size: 1.5rem;
+            }
+            
+            .menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .navbar {              
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) { 
+            .navbar a {
+                font-size: 14px;
+                padding: 12px 0;
+            }
+
+            .footer {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .content {
+                gap: 5px;
+            }
+        }
