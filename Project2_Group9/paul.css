@@ -113,7 +113,7 @@ footer {
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .grid-container {
     display: grid;
     grid-template-areas:
@@ -157,3 +157,4 @@ footer {
     margin: 0;
   }
 }
+
