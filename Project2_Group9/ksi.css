@@ -1,0 +1,153 @@
+        body {
+            display: grid;
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            grid-template-columns: 0fr 1fr 0fr;
+            grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "sidebar main video"
+            "footer footer footer";
+        }
+        .nav {
+            grid-area: nav;
+            background-color: #ba4444;
+            padding: 10px;
+            margin-bottom: 2em;
+        }
+        .nav ul{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            list-style-type: none;
+            gap: 10px;
+        }
+        @font-face {
+        font-family: 'Fighting Spirit';
+        src: url('Fighting Spirit 2 ital.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+        .nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            border:solid 0.5em black;
+            background-color: black;
+            border-radius: 1em;
+            padding: 0.5em;
+            font-size: larger;
+        }
+        header{
+            grid-area: header;
+            text-align: center;
+            font-size: 3em;
+            color: #ffffff;
+            padding : 0.5em;
+            background: linear-gradient(to right, black,red,white);
+            font-family: 'Fighting Spirit' ;
+        }
+        .aside{
+            grid-area: sidebar;
+            padding-right: 10px;
+            display: block;
+            background-color: #ba4444;
+            border: solid 0.7em white;
+            border-radius: 1em;
+
+        }
+        .aside p{
+            margin-left: 3em;
+            font-size: 30px;
+        }
+        .nav ul li a:hover {
+        background-color: #ff4848; 
+        }
+        .aside>img{
+            width: 500px;
+            border-radius: 1em;
+            margin-top: 1em;
+            margin-left: 0.5em;
+        }
+        video{
+            grid-area: video;
+            border: solid 0.7em white;
+            border-radius: 1em;
+
+        }
+        .main{
+            grid-area: main;
+            display: block;
+            border: solid 0.7em white;
+            border-radius: 1em;
+            margin-left: 1em;
+            background-color: #ba4444;
+            margin-right: 1em;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+            font-size: 1em;
+            color: #ffffff;
+            padding: 1em;
+            background-color: #ba4444;
+            border-radius: 1em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border: solid 0.7em white;
+            border-radius: 1em;
+        }
+
+        .hamburger {
+            display: none; 
+            cursor: pointer;
+            font-size: 2em;
+            color: white;
+            border-radius: 1em;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                display: none; 
+            }
+
+            .hamburger {
+                display: block; 
+            }
+
+            body {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "sidebar"
+                    "main"
+                    "video"
+                    "footer";
+            }
+
+            .aside img {
+                width: 100%; 
+                margin: 0 auto;
+            }
+
+            .aside p {
+                margin-left: 1em;
+                font-size: 1.5em;
+            }
+
+            video {
+                width: 100%; 
+                height: auto;
+            }
+
+            .main {
+                margin: 1em;
+                padding: 1em;
+            }
+
+            footer {
+                margin: 1em;
+            }
+        }
