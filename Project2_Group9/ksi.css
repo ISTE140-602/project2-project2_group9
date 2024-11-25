@@ -1,19 +1,18 @@
 body {
     display: grid; /* Sets the layout as a grid */
     background-color: #000000; /* Sets the background color to black */
-    font-family: Arial, sans-serif;
-    color: #ffffff; 
+    font-family: Arial, sans-serif; /* Sets the default font */
+    color: #ffffff; /* Sets the text color to white */
     grid-template-columns: 0fr 1fr 0fr; /* Defines column widths */
     grid-template-areas: /* Defines the grid areas */
         "header header header"
         "nav nav nav"
         "sidebar main video"
-        "footer footer footer";
+        "footer footer footer";  
 }
 .nav {
     grid-area: nav; /* Places the navigation in the 'nav' grid area */
     background-color: #ba4444; /* Sets the background color */
-    padding: 10px; /* Adds padding */
     margin-bottom: 2em; /* Adds space below the navigation */
 }
 
@@ -24,83 +23,76 @@ body {
     gap: 10px; /* Adds spacing between items */
 }
 
-/* Custom font import */
-@font-face {
-    font-family: 'Fighting Spirit'; /* Defines the custom font name */
-    src: url('Fighting Spirit 2 ital.ttf') format('truetype'); /* Links the font file */
-    font-weight: normal; /* Sets normal font weight */
-    font-style: normal; /* Sets normal font style */
-}
 
 .nav ul li a {
     color: #ffffff; 
     text-decoration: none; /* Removes underline from links */
-    border: solid 0.5em black;
+    border: solid 0.5em black; /* Adds a black border */
     background-color: black; 
     border-radius: 1em; /* Rounds the corners */
-    padding: 0.5em; /* Adds padding */
-    font-size: larger; 
+    font-size: larger; /* Increases font size */
 }
 
 header {
-    grid-area: header; 
+    grid-area: header; /* Places header in the 'header' grid area */
     text-align: center; /* Centers the text */
-    font-size: 3em;
-    color: #ffffff; 
+    font-size: 2em; /* Sets font size */
+    color: #ffffff; /* Sets text color */
     padding: 0.5em; /* Adds padding */
     background: linear-gradient(to right, black, red, white); /* Adds a gradient background */
-    font-family: 'Fighting Spirit'; /* Uses the custom font */
+    font-weight: bold;
+    font-family: 'Times New Roman';
 }
 .aside {
     grid-area: sidebar; /* Places aside in the 'sidebar' grid area */
     padding-right: 10px; /* Adds padding on the right */
     display: block; /* Sets display to block */
     background-color: #ba4444; /* Sets background color */
-    border: solid 0.7em white; /* Adds a white border */
+    border: solid 0.4em white; /* Adds a white border */
     border-radius: 1em; /* Rounds the corners */
 }
 .aside p {
     margin-left: 3em; /* Adds left margin */
-    font-size: 30px; /* Sets font size */
+    font-size: 10px; /* Sets font size */
 }
 .nav ul li a:hover {
     background-color: #ff4848; /* Changes background color on hover */
 }
 .aside > img {
-    width: 500px; /* Sets the image width */
+    width: 250px; /* Sets the image width */
     border-radius: 1em; /* Rounds the corners */
     margin-top: 1em; /* Adds top margin */
     margin-left: 0.5em; /* Adds left margin */
 }
 video {
+    width: 250px;
     grid-area: video; /* Places the video in the 'video' grid area */
-    border: solid 0.7em white; /* Adds a white border */
+    border: solid  white; /* Adds a white border */
     border-radius: 1em; /* Rounds the corners */
 }
 .main {
     grid-area: main; /* Places the main content in the 'main' grid area */
     display: block; /* Sets display to block */
-    border: solid 0.7em white; /* Adds a white border */
+    border: solid 0.2em white; /* Adds a white border */
     border-radius: 1em; /* Rounds the corners */
     margin-left: 1em; /* Adds left margin */
     background-color: #ba4444; /* Sets background color */
     margin-right: 1em; /* Adds right margin */
-    font-size: 30px; /* Sets font size */
+    font-size: 16px; /* Sets font size */
     color: black; /* Sets text color */
-    padding: 1em; /* Adds padding */
     font-family: 'Times New Roman', Times, serif; /* Sets the font */
 }
 footer {
     grid-area: footer; /* Places footer in the 'footer' grid area */
     text-align: center; /* Centers the text */
-    font-size: 1.5em; /* Sets font size */
+    font-size: 1em; /* Sets font size */
     color: #ffffff; /* Sets text color */
-    padding: 1em; /* Adds padding */
+    padding: 0.5em; /* Adds padding */
     background-color: #ba4444; /* Sets background color */
-    border-radius: 1em; /* Rounds the corners */
-    margin-top: 2em; /* Adds top margin */
+    border-radius: 0.5em; /* Rounds the corners */
+    margin-top: 1em; /* Adds top margin */
     margin-bottom: 2em; /* Adds bottom margin */
-    border: solid 0.7em white; /* Adds a white border */
+    border: solid 0.2em white; /* Adds a white border */
 }
 .hamburger {
     display: none; /* Hides by default */
@@ -152,6 +144,6 @@ footer {
     }
 
     footer {
-        margin: 1em; 
+        margin: 1em; /* Adjusts margins */
     }
 }
