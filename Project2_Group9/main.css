@@ -1,124 +1,134 @@
-
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #fafafa; 
+    font-family: Arial, sans-serif; /* Set default font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure consistent box-sizing */
+    background-color: #fafafa; /* Light gray background color */
 }
 
-
+/* Main container styling */
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    display: flex; /* Flex layout for container */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure container covers full viewport height */
 }
 
+/* Header styling */
 header {
-    background-color: #ff4d4d; 
-    color: white; 
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2.5rem;
-    font-weight: bold;
-    border-bottom: 2px solid #e0e0e0;
-
+    background-color: #ff4d4d; /* Bright red background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 1.5rem; /* Add padding around header content */
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    border-bottom: 2px solid #e0e0e0; /* Add a light gray border at the bottom */
 }
 
-
+/* Navigation menu styling */
 .menu {
-    background-color: white; 
-    display: flex;
-    justify-content: center;
-    padding: 0.75rem 0;
-    border: 5px solid #e0e0e0; 
+    background-color: white; /* White background for menu */
+    display: flex; /* Horizontal layout for menu items */
+    justify-content: center; /* Center align menu items */
+    padding: 0.75rem 0; /* Add vertical padding */
+    border: 5px solid #e0e0e0; /* Light gray border around the menu */
 }
 
+/* Menu links styling */
 .menu a {
-    text-decoration: none;
-    color: #000; 
-    font-weight: bold;
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
-
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Black text color */
+    font-weight: bold; /* Bold font for links */
+    margin: 0 1rem; /* Horizontal spacing between links */
+    padding: 0.5rem 1rem; /* Padding inside link elements */
 }
 
+/* Menu links hover effect */
 .menu a:hover {
-    background-color: #ff4d4d; 
-    color: white; 
-    border-radius: 5px;
+    background-color: #ff4d4d; /* Red background on hover */
+    color: white; /* White text on hover */
+    border-radius: 5px; /* Rounded corners on hover */
 }
 
-
+/* Main layout styling */
 .main {
-    display: flex;
-    flex: 1;
+    display: flex; /* Flex layout for main content */
+    flex: 1; /* Allow it to fill available space */
 }
 
+/* Sidebar styling */
 nav {
-    background-color: #f9f9f9; 
-    padding: 2rem;
-    width: 100%; 
-    max-width: 280px; 
-    border-right: 2px solid #e0e0e0;
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 2rem; /* Add padding inside sidebar */
+    width: 100%; /* Full width by default */
+    max-width: 280px; /* Maximum width for sidebar */
+    border-right: 2px solid #e0e0e0; /* Right border separating sidebar from content */
 }
 
-
+/* Content area styling */
 .content {
-    flex: 1;
-    padding: 2rem;
+    flex: 1; /* Take remaining space */
+    padding: 2rem; /* Add padding inside content */
 }
 
+/* Image styling */
 .image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    border:2px solid gray;
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 1rem; /* Spacing below image */
+    border: 2px solid gray; /* Add a gray border around images */
 }
 
+/* Paragraph text styling inside content */
 .content p {
-    font-size: 1.2rem;
-    color: #333; 
+    font-size: 1.2rem; /* Slightly larger text size */
+    color: #333; /* Dark gray text color */
 }
 
-
+/* Button styling */
 .btn {
-    background-color: #ff4d4d; 
-    color: white; 
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 1rem;
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text color */
+    padding: 0.75rem 1.5rem; /* Add padding around button text */
+    text-decoration: none; /* Remove underline from button links */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-weight: bold; /* Bold button text */
+    margin-top: 1rem; /* Spacing above button */
 }
 
+/* Button hover effect */
 .btn:hover {
-    background-color: #e60000; 
+    background-color: #e60000; /* Darker red background on hover */
 }
 
+/* Text under video in sidebar */
 .better {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 1rem;
-    color: #444;
-    font-style: italic;
+    font-size: 1.2rem; /* Text size */
+    text-align: center; /* Center align text */
+    margin-top: 1rem; /* Spacing above text */
+    color: #444; /* Medium gray text color */
+    font-style: italic; /* Italicized text */
 }
+
+/* Footer styling */
 .footer {
-    background-color: #ff4d4d;
-    color: white;
-    text-align: center;
-    padding:10px;
-    border-top: 2px solid #fff;
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Add padding around footer content */
+    border-top: 2px solid #fff; /* Add a white border at the top */
 }
 
-.logo{
-    width: 20%;
+/* Logo styling */
+.logo {
+    width: 20%; /* Set logo to occupy 20% of the width */
+}
 
-                }
-.vid{
-width: 100%;
-border-radius: 10px;
-margin-bottom: 1rem;
-border:2px solid gray;
+/* Video styling */
+.vid {
+    width: 100%; /* Full width video */
+    border-radius: 10px; /* Rounded corners for video */
+    margin-bottom: 1rem; /* Spacing below video */
+    border: 2px solid gray; /* Add a gray border around video */
 }
