@@ -117,7 +117,7 @@ body {
 }
 
 /* Footer section styling */
-.footer {
+footer {
     background-color: #FF1493; /* Pink background */
     color: white; /* White text color */
     text-align: center; /* Centered text */
@@ -186,7 +186,7 @@ body {
     }
 
     /* Adjust footer padding and font size */
-    .footer {
+    footer {
         padding: 10px; /* Reduced padding */
         font-size: 0.9rem; /* Smaller font size */
     }
