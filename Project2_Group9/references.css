@@ -75,3 +75,14 @@ footer{
     color: #000000; /* setting text color */ 
     text-decoration: none; /* removing underline */ 
 }
+
+div> a {
+    color: #ffffff;   /* setting text color */ 
+    text-decoration: none; /* removing underline */ 
+}
+
+h1 > a {
+    color: #ffffff;   /* setting text color */ 
+    text-decoration: none; /* removing underline */ 
+    
+}
