@@ -1,0 +1,67 @@
+body{
+    display: grid;
+    grid-template-rows:1fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: "header"
+    "lunchly"
+    "ksi"
+    "logan"
+    "beast"
+    "footer";        }
+.header{
+    grid-area: header;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1em;
+}
+.beast{
+    grid-area: beast;
+    display: block;
+    border-radius: 1em;
+    background-color: #00ffff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1em;
+}
+.lunchly{
+    grid-area: lunchly;
+    background-color: #ff4d4d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.logan{
+    grid-area: logan;
+    background-color: #ff9f4d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.ksi{
+    grid-area: ksi;
+    background-color: #ba4444;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 1em;
+    background-color: black;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: solid 0.7em white;
+    border-radius: 1em;
+}
