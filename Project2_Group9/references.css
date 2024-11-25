@@ -1,77 +1,77 @@
 body{
-    display: grid;
-    grid-template-rows:1fr 2fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: "header"
+    display: grid; /* using grid layout */
+    grid-template-areas:  /* establishing the layout */
+    "header"
     "lunchly"
     "ksi"
     "logan"
     "beast"
     "footer";
-    grid-template-rows: repeat(6, auto);        }
+    grid-template-rows: repeat(6, auto); /*  the rows will automatically adjust according to content  */     
+}
 .header{
     grid-area: header;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 1em;
-    font-weight: bold;
+    background-color: #000000;  /* setting background color  */           
+    color: #ffffff;   /* setting text color */ 
+    padding: 10px; /* setting padding */ 
+    text-align: center;  /* aligning text to the center */ 
+    border-radius: 1em; /* setting border radius */ 
+    font-weight: bold; /* making text bold  */ 
 }
 .beast{
     grid-area: beast;
-    display: block;
-    border-radius: 1em;
-    background-color: #0bacac;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    margin-top: 1em;
-    font-weight: bold;
+    display: block;  /* making it block */ 
+    border-radius: 1em; /* making border corners round */ 
+    background-color: #0bacac; /* setting background color */ 
+    color: #ffffff; /* setting text color */ 
+    padding: 10px; /* setting padding */
+    text-align: center; /* aligning text to the center */ 
+    margin-top: 1em; /* making distance between "beast" and the other element */ 
+    font-weight: bold; /* making text bold */ 
 }
 .lunchly{
     grid-area: lunchly;
-    background-color: #ff4d4d;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 1em;
-    margin-top: 1em;
-    font-weight: bold;
+    background-color: #ff4d4d;  /* setting background color */ 
+    color: #ffffff;  /* setting text color */ 
+    padding: 10px;  /* setting padding */ 
+    text-align: center; /* aligning text to the center */ 
+    border-radius: 1em; /* making borders round */ 
+    margin-top: 1em; /* making distance between "lunchly" and the other element */ 
+    font-weight: bold; /* making text bold */ 
 }
 .logan{
     grid-area: logan;
-    background-color: #ff9f4d;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 1em;
-    margin-top: 1em;
-    font-weight: bold;
+    background-color: #ff9f4d; /* setting background color */ 
+    color: #ffffff; /* setting text color */ 
+    padding: 10px; /* setting padding */ 
+    text-align: center; /* aligning text to the center */ 
+    border-radius: 1em; /* making borders round */ 
+    margin-top: 1em; /* making distance between "logan" and the other element */ 
+    font-weight: bold; /* making text bold */ 
 }
 .ksi{
     grid-area: ksi;
-    background-color: #ba4444;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 1em;
-    margin-top: 1em;
-    font-weight: bold;
+    background-color: #ba4444; /* setting background color */ 
+    color: #ffffff; /* setting text color */ 
+    padding: 10px;  /* setting padding */ 
+    text-align: center; /* aligning text to the center */ 
+    border-radius: 1em; /* making borders round */ 
+    margin-top: 1em;  /* making distance between "ksi" and the other element */ 
+    font-weight: bold; /* making text bold */ 
 }
 footer{
     grid-area: footer;
-    text-align: center;
-    font-size: 1.5em;
-    color: #ffffff;
-    padding: 1em;
-    background-color: black;
-    border-radius: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: solid 0.7em white;
-    border-radius: 1em;
+    text-align: center; /* aligning text to the center */ 
+    font-size: 1.5em; /* setting font size */
+    color: #ffffff; /* setting text color */ 
+    padding: 1em; /* setting padding */ 
+    background-color: black; /* setting background color */ 
+    border-radius: 1em; /* making borders round */ 
+    margin-top: 2em; /* making distance between footer and the other element */ 
+    margin-bottom: 2em; /* making distance between footer and the other element */ 
+    border: solid 0.7em white; /* adding borders */ 
 }
 .link a{
-    color: #000000;
-    text-decoration: none;
+    color: #000000; /* setting text color */ 
+    text-decoration: none; /* removing underline */ 
 }
