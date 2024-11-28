@@ -1,0 +1,164 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* ensures consistent box sizing */         
+}
+
+:root {
+  --gap-size: 0.5em; /* setting the gap between grid areas */ 
+}
+.grid-container {
+  display: grid;  /* using grid layout  */
+  grid-template-areas:
+    "header"
+    "nav"
+    "ham"
+    "s1"
+    "main"
+    "s2"
+    "footer";
+  grid-template-rows: repeat(7, auto); /*  the rows will automatically adjust according to content  */     
+  gap: var(--gap-size); /*setting the gap between grid areas*/     
+}
+
+body {
+  background-color: #63a063; /*  setting background color  */     
+}
+
+header {
+  grid-area: header;
+  text-align: center; /* aligning text to the center  */     
+  background-color: #008cdd; /*  setting background color  */     
+  border: 2px solid #ff8437; /*  setting borders  */     
+  color: #ffffff; /*  setting text color  */     
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /*  setting font family  */     
+  font-size: 20px; /*  setting font size  */  
+}
+
+nav {
+  display: none; /*  making nav bar disappear for mobile layout  */  
+  grid-area: nav;
+}
+
+.ham {
+  width: 100%; /*  making the ham div extend to the entire page  */  
+  grid-area: ham;
+  background-color: black; /* setting background color */  
+  border: 2px solid #ff8437; /*  setting borders  */  
+}
+
+.ham-in {
+  display: block; /*  making ham visible  */  
+  color: #ffffff; /*  setting text color */  
+  display: flex; /*  making the ham element in flex layout to center it  */  
+  justify-content: center; /*  aligning hamburger icon to the center  */  
+}
+.main {
+  grid-area: main;
+  background-color: #ffe865; /*  setting background color  */  
+  border: 2px solid #ff8437; /*  setting borders  */  
+  padding: 0.5em; /*  setting padding  */  
+  font-family: cursive; /*  setting font family  */  
+}
+.main h1 {
+  font-family: 'Times New Roman', Times, serif; /*  setting font family  */  
+}
+.sidebar1 {
+  grid-area: s1;
+  background-color: #ffe865; /*  setting background color  */  
+  justify-items: center; /*  aligning the content to the center of the main axis  */  
+  align-content: center; /*  aligning the content to the center of the cross axis  */  
+  border: 2px solid #ff8437; /*  setting borders  */  
+  font-style: italic; /*  setting font style  */  
+  font-weight: bold; /*  making text bold  */  
+  font-size: 20px; /*  setting font size  */  
+}
+
+.sidebar2 {
+  grid-area: s2;
+  background-color: #ffe865; /*  setting background color  */  
+  border: 2px solid #ff8437; /*  setting borders  */  
+  display: flex; /*  making the sidebar element in flex layout to center it  */  
+  justify-content: center; /*  aligning video to the center  */ 
+}
+
+.site-nav {
+  display: flex; /*  making the nav elements in flex layout to make it horizontal  */
+  padding: 0.5em; /*  setting padding  */  
+  list-style-type: none; /*  removing the list "dots"  */  
+  background-color: black; /*  setting background color  */  
+  gap: var(--gap-size); /*  setting gap between each nav link  */  
+  justify-content: center; /*  aligning nav elements to the center  */ 
+  border: 2px solid #ff8437; /*  setting borders  */  
+}
+
+.site-nav > li > a {
+  background-color: #ffe865; /*  setting background color  */  
+  color: black; /*  setting text color  */  
+  text-decoration: none; /* removing underline */  
+  padding: 0.5em; /*  setting padding  */  
+  border: 2px solid #ff8437; /*  setting borders  */  
+  text-align: center; /*  aligning text to the center  */  
+  border-radius: 0.5em; /*  making borders round  */  
+}
+
+footer {
+  grid-area: footer;
+  background-color: #008cdd; /*  setting background color  */  
+  text-align: center; /*  aligning text to the center  */  
+  padding: 0.5em; /*  setting padding  */  
+  color: white; /*  setting text color  */  
+  border: 2px solid #ff8437;  /*  setting borders  */  
+  font-weight: bold; /*  making text bold  */  
+}
+
+/* uptil here is only for mobile layout */
+
+@media (min-width: 1024px) {  /*  making the webpage responsive for tablets and laptops  */  
+  .grid-container {
+    display: grid; /* using grid layout  */
+    grid-template-areas: /* setting the grid layout  */
+      "header header  header"
+      "nav  nav nav"
+      "ham  ham ham"
+      "s1 main  s2"
+      "s1 main  s2"
+      "footer footer  footer";
+    grid-template-columns: 1fr 2fr 1fr; /* setting the size of each column  */
+    grid-template-rows: repeat(5, auto); /*  the rows will automatically adjust according to content  */     
+    gap: var(--gap-size);  /*setting the gap between grid areas*/   
+  }
+
+  .ham {
+    display: none;  /*not displaying ham*/   
+  }
+
+  nav {
+    grid-area: nav;
+    display: block;  /*displaying nav*/   
+  }
+
+  .site-nav {
+    display: flex; /*  making the nav elements in flex layout to make it horizontal  */
+    gap: var(--gap-size); /*  setting gap between each nav link  */  
+    padding: 0.5em; /*  setting padding  */  
+    list-style-type: none; /*  removing the list "dots"  */  
+    background-color: black; /*  setting background color  */  
+    justify-content: center; /*  aligning nav elements to the center  */ 
+    border: 2px solid #ff8437;  /*  setting borders  */  
+  }
+
+  .site-nav > li > a {
+    display: block;  /*  displaying nav elements  */  
+    background-color: #ffe865;  /*  setting background color  */  
+    color: black;  /*  text color  */  
+    text-decoration: none;  /*  removing underline  */  
+    padding: 0.5em;  /* setting padding */  
+    border: 2px solid #ff8437;  /*  setting borders  */  
+  }
+
+  li > a:hover {  /*  when cursor hovers over the nav bar link.......  */  
+    background-color: #ff8437;  /*  setting background color  */  
+    text-decoration: underline;  /*  adding underline  */  
+  }
+}
